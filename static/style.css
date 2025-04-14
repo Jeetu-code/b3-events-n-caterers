@@ -15,6 +15,8 @@ header {
 
 }
 
+
+
 nav {
     display: flex;
     justify-content: space-around;
@@ -66,8 +68,17 @@ main{
     z-index: -1;
 }
 
+#slogan {
+    display: flex;
+  justify-content: center;
+  background-color: #d06a36;
+  font-size: 7vh;
+  text-align: center;
+}
+
 #Services {
-    height: 90vh;
+    height: auto;
+
 }
 
 #Services h1 {
@@ -120,22 +131,78 @@ main{
     font-style: italic;
 
 }
-
- #About {
-    height: 90vh;
+#slogan2 {
+    display: flex;
+  justify-content: center;
+  background-color: #d06a36;
+  font-size: 16vh;
+  text-align: center;
 }
+
 
 #Services {
-   background-image: url("static/img/image2.png");
+   background-image: url("/static/img/background\ pattern.jpg");
 }
 
-#Booking {
-    height: 90vh;
+#about_head {
+    text-align: center;
+    font-size: 5rem;
+    position: relative;
+  
+}
+#About {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about{
+    width: 81vw;
+    height: 92vh;
+    background-color: #ffc6a0;
+    border-radius:
+  7.5rem;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    height: 50%;
+    border-radius: 3rem;
 }
 
-#Testimonials {
-    height: 90vh;
+.container .image {
+    
+    height: 100%;
+    width: 50%;
 }
+
+.container .name {
+    
+    height: 100%;
+    width: 50%;
+}
+.container .name p {
+    font-size: 5rem;
+  text-align: center;
+  position: relative;
+  top: 2rem;
+
+}
+
+.about span {
+    text-align: center;
+    font-size: 2rem;
+    position: relative;
+    
+    bottom: 6rem;
+}
+/* #Booking {
+    height: 90vh;
+} */
+
+/* #Testimonials {
+    height: 90vh;
+} */
 
 
 
@@ -151,7 +218,7 @@ main{
 
 .leftfooter ul {
     font-size: 2rem;
-    margin: 3rem 0 0 14rem;
+    margin: 2rem 0 0 14rem;
 }
 
 .leftfooter ul li {
@@ -159,7 +226,10 @@ main{
     color: white;
 }
 
-
+.leftfooter ul li img{
+    width: 49px;
+  margin:0 auto -9px 0;
+}
 
 .rightfooter {
     width: 50%;

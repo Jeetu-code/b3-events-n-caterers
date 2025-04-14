@@ -17,9 +17,13 @@ nav{
     justify-content: space-around;
     background:rgba(144, 58, 12, 0.785);
     color:lavender;
-    height: 3rem;
+    height: 5rem;
     box-sizing: border-box;
    
+}
+.logo img{
+    width: 75px;
+  padding:7px 0 0 0;
 }
 .content ul{
     display: flex;

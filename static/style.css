@@ -141,7 +141,7 @@ main{
 
 
 #Services {
-   background-image: url("/static/img/background\ pattern.jpg");
+   background-image: url("/b3-events-n-caterers/static/img/background\ pattern.jpg");
 }
 
 #about_head {
@@ -208,7 +208,7 @@ main{
 
 .footercontainer{
     display: flex;
-    background: rgb(38, 37, 37);
+    background: rgb(49, 47, 47);
     height: 13rem;
 }
 .leftfooter {

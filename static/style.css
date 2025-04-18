@@ -15,8 +15,6 @@ header {
 
 }
 
-
-
 nav {
     display: flex;
     justify-content: space-around;
@@ -24,7 +22,6 @@ nav {
     color: lavender;
     height: 5rem;
     box-sizing: border-box;
-
 }
 
 .logo img {
@@ -51,68 +48,98 @@ nav {
 main{
     min-height: calc(100vh-5rem-12vh);
 }
-
+section {
+    scroll-margin-top: 6rem; /* Slightly more than navbar height */
+}
 #Home {
-    position: relative;
-    height: 90vh;
+    height: auto;
     width: 100%;
-
+    text-align: center;
 }
 
-#Home img {
-    background-size: cover;
-    height: 90vh;
+.image-box img {
     width: 100%;
-    position: absolute;
-    object-fit: cover;
-    z-index: -1;
+    height: auto;
+    display: block;
 }
 
-#slogan {
-    display: flex;
-  justify-content: center;
-  background-color: #d06a36;
-  font-size: 7vh;
-  text-align: center;
+.slogan p {
+    background-color: #d06a36;
+    font-size: 4rem;
+    color: #333;
 }
 
 #Services {
-    height: auto;
+    background-image: url("img/background_pattern.jpg"); /* Add your image path */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    min-height: 100vh;
+    z-index: 0;
+    overflow: hidden;
+}
+#Services .overlay{
+    position: relative;
+   height: 100%;
+   width: 100%;
+   background-color: rgba(222, 212, 212, 0.72);
+    z-index: 1;
 
 }
 
-#Services h1 {
-    text-align: center;
-    font-size: 5rem;
+#Services h1{
     position: relative;
-    top: 3rem;
+    z-index: 2;
+    text-align: center;
+    font-size: 7rem;
+   /* padding-top: 3rem; */
+   margin-bottom: 3rem;
 }
 
 .ServiceContainer {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
-    height: 40%;
     justify-content: space-around;
+    margin-bottom: 3rem;
+    position: relative;
+    z-index: 2;
+    padding: 0 10rem;
 }
 
-.leftContainer {
+/* .leftContainer {
     width: 90%;
     max-width: 700px;
     height: 19rem;
     margin: auto;
     border-radius: 10rem;
 
-}
+} */
 
-.leftContainer img {
+.leftContainer {
+    flex: 1;
+    max-width: 550px;
+  height: 16rem;
+    margin: 1rem;
+    border-radius: 2rem;
+    overflow: hidden;
+}
+/* .leftContainer img {
     width: 100%;
     height: 100%;
     display: block;
     border-radius: 10rem;
     object-fit: cover;
-}
+} */
 
-.rightContainer {
+
+.leftContainer img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10rem;
+}
+/* .rightContainer {
 
     background: #d5ac84;
     width: 90%;
@@ -121,81 +148,98 @@ main{
     padding: 1.5rem;
     border-radius: 2.5rem;
 
-}
+} */
 
-.rightContainer p {
+.rightContainer {
+    flex: 2;
+    max-width: 700px;
+    background: #d5ac84;
+    margin: 1rem;
+    padding: 2rem;
+    border-radius: 2rem;
+}
+/* .rightContainer p {
     font-size: 1.2rem;
     line-height: 1.6;
     letter-spacing: 0.05em;
     font-weight: 500;
     font-style: italic;
 
+} */
+.rightContainer p {
+    font-size: 1.5rem; /* Bigger text */
+    line-height: 1.8;
+    letter-spacing: 0.05em;
+    font-weight: 500;
+    font-style: italic;
+    color: #222;
 }
-#slogan2 {
-    display: flex;
-  justify-content: center;
-  background-color: #d06a36;
-  font-size: 16vh;
-  text-align: center;
-}
-
-
-#Services {
-   background-image: url("/b3-events-n-caterers/static/img/background\ pattern.jpg");
-}
-
-#about_head {
+.slogan2 {
     text-align: center;
-    font-size: 5rem;
-    position: relative;
-  
+    margin-top: 5rem;
 }
+.slogan2 p {
+    background-color: #d06a36;
+    font-size: 4rem;
+    color: #fff;
+    padding: 1rem 2rem;
+}
+/* .slogan2 p{
+    background-color: #d06a36;
+    font-size: 4rem;
+    color: #333;
+    text-align: center;
+    
+} */
 #About {
     height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
-.about{
-    width: 81vw;
-    height: 92vh;
-    background-color: #ffc6a0;
-    border-radius:
-  7.5rem;
+#About h1 {
+    text-align: center;
+    font-size: 7rem;
+    margin-top: 6rem;
 }
 .container {
-    display: flex;
-    justify-content: center;
-    height: 50%;
+    width: 90%;
+    height: 70vh;
+    background-color: #ffc6a0;
     border-radius: 3rem;
+    margin: 5rem auto;
+    max-width: 1200px;
+    padding: 1rem;
+    overflow-wrap:break-word ;
 }
-
-.container .image {
-    
-    height: 100%;
-    width: 50%;
-}
-
-.container .name {
-    
-    height: 100%;
-    width: 50%;
-}
-.container .name p {
-    font-size: 5rem;
-  text-align: center;
-  position: relative;
-  top: 2rem;
-
-}
-
-.about span {
+.container h2{
     text-align: center;
-    font-size: 2rem;
-    position: relative;
-    
-    bottom: 6rem;
+    font-size: 4rem;
+   padding: 4rem;
 }
+.container p{
+    font-size: clamp(1.5rem,1.9rem,2.3rem);
+    width: 90%;
+    margin:0 auto;
+    line-height: 1.6;
+  letter-spacing: 0.182em;
+  word-wrap: break-word;
+}
+
+
+
+/* #Services::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    z-index: 1;
+  }
+  
+  #Services * {
+    position: relative;
+    z-index: 2;
+  }
+   */
 /* #Booking {
     height: 90vh;
 } */
@@ -204,11 +248,9 @@ main{
     height: 90vh;
 } */
 
-
-
 .footercontainer{
     display: flex;
-    background: rgb(49, 47, 47);
+    background: rgba(168, 88, 43, 0.94);
     height: 13rem;
 }
 .leftfooter {
@@ -253,8 +295,8 @@ main{
     border:none ;
     font-size: 2rem;
     color: white;
-    background-color: rgb(38, 37, 37);;
-}
+    background-color: rgba(168, 89, 43, 0);
+}   
 .bottomfooter{
     height: 50px;
     background: black;

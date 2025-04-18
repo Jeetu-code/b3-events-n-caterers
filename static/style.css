@@ -74,7 +74,7 @@ section {
     background-size: cover;
     background-position: center;
     position: relative;
-    min-height: 100vh;
+    /* min-height: 100vh; */
     z-index: 0;
     overflow: hidden;
 }
@@ -107,15 +107,6 @@ section {
     padding: 0 10rem;
 }
 
-/* .leftContainer {
-    width: 90%;
-    max-width: 700px;
-    height: 19rem;
-    margin: auto;
-    border-radius: 10rem;
-
-} */
-
 .leftContainer {
     flex: 1;
     max-width: 550px;
@@ -124,14 +115,6 @@ section {
     border-radius: 2rem;
     overflow: hidden;
 }
-/* .leftContainer img {
-    width: 100%;
-    height: 100%;
-    display: block;
-    border-radius: 10rem;
-    object-fit: cover;
-} */
-
 
 .leftContainer img {
     width: 100%;
@@ -139,16 +122,6 @@ section {
     object-fit: cover;
     border-radius: 10rem;
 }
-/* .rightContainer {
-
-    background: #d5ac84;
-    width: 90%;
-    max-width: 700px;
-    margin: 2rem auto;
-    padding: 1.5rem;
-    border-radius: 2.5rem;
-
-} */
 
 .rightContainer {
     flex: 2;
@@ -158,18 +131,9 @@ section {
     padding: 2rem;
     border-radius: 2rem;
 }
-/* .rightContainer p {
-    font-size: 1.2rem;
-    line-height: 1.6;
-    letter-spacing: 0.05em;
-    font-weight: 500;
-    font-style: italic;
 
-} */
 .rightContainer p {
     font-size: 1.5rem; /* Bigger text */
-    line-height: 1.8;
-    letter-spacing: 0.05em;
     font-weight: 500;
     font-style: italic;
     color: #222;
@@ -184,13 +148,7 @@ section {
     color: #fff;
     padding: 1rem 2rem;
 }
-/* .slogan2 p{
-    background-color: #d06a36;
-    font-size: 4rem;
-    color: #333;
-    text-align: center;
-    
-} */
+
 #About {
     height: auto;
 }
@@ -218,34 +176,9 @@ section {
     width: 90%;
     margin:0 auto;
     line-height: 1.6;
-  letter-spacing: 0.182em;
   word-wrap: break-word;
 }
 
-
-
-/* #Services::before {
-    content: "";
-    position: absolute;
-    top: 0; left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0,0,0,0.5);
-    z-index: 1;
-  }
-  
-  #Services * {
-    position: relative;
-    z-index: 2;
-  }
-   */
-/* #Booking {
-    height: 90vh;
-} */
-
-/* #Testimonials {
-    height: 90vh;
-} */
 
 .footercontainer{
     display: flex;

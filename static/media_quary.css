@@ -1,3 +1,4 @@
+
 /* Tablet (max-width: 1024px) */
 @media (max-width: 1024px) {
     .ServiceContainer {
@@ -24,6 +25,68 @@
         font-size: 1.6rem;
     }
 
+    #Booking h1 {
+        font-size: 3rem;
+    }
+
+    .Booking_container {
+        width: 90%;
+        padding: 1.5rem;
+        /* margin: 2rem auto 0 auto; */
+        box-sizing: border-box;
+    }
+
+    .container_item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    .booking_left,
+    .booking_right {
+        width: 100%;
+        height: auto;
+    }
+
+    .booking_left .inputs,
+    .booking_right .inputs {
+        width: 100%;
+        margin: 1rem 0;
+        height: 4rem;
+        padding: 0 1rem;
+    }
+
+    .booking_left .inputs img,
+    .booking_right .inputs img {
+        width: 2rem;
+        height: 2rem;
+    }
+
+    .booking_left .inputs input,
+    .booking_right .inputs input,
+    .booking_left .inputs select,
+    .booking_right .inputs select,
+    .booking_left .inputs textarea,
+    .booking_right .inputs textarea {
+        font-size: 1rem;
+        padding: 1rem 0.5rem;
+        height: 3rem;
+    }
+.submit{
+    margin: 0.5rem 0;
+}
+.submit button{
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem;
+    height: 3.5rem;
+    border-radius: 2rem;   
+    width: 80%;
+   
+}
     .footercontainer {
         /* flex-direction: column; */
         align-items: center;
@@ -41,16 +104,19 @@
         font-size: 2rem;
         margin-left: 1rem;
     }
+
     .slogan p,
     .slogan2 p {
         font-size: 2rem;
         padding: 1rem;
     }
+
     .leftfooter ul,
     .rightfooter ul {
         font-size: 1.4rem;
     }
-    #btn{
+
+    #btn {
         font-size: 1.4rem;
     }
 }
@@ -67,16 +133,19 @@
         margin: 0.3rem;
     }
 
-    .slogan p{
+    .slogan p {
         font-size: 2rem;
         padding: 1rem;
     }
+
     .slogan2 p {
         font-size: 5rem;
     }
-    .rightContainer p{
+
+    .rightContainer p {
         font-size: 1rem;
     }
+
     #Services h1,
     #About h1 {
         font-size: 3rem;
@@ -109,28 +178,36 @@
     .rightfooter ul {
         font-size: 1.3rem;
     }
+
     .leftfooter ul,
     .rightfooter ul {
         font-size: 1.3rem;
         margin: 0.5rem 0;
         text-align: center;
     }
-    #btn{
+
+    #btn {
         font-size: 1.3rem;
     }
-    .leftfooter{
+
+    .leftfooter {
         margin-left: 0.4rem;
     }
-    .leftfooter ul li img{
+
+    .leftfooter ul li img {
         width: 25px;
     }
-    .leftfooter ul li , .rightfooter ul li{
+
+    .leftfooter ul li,
+    .rightfooter ul li {
         padding: 3px auto;
     }
-    #Services h1{
+
+    #Services h1 {
         padding-top: 1rem;
     }
 }
+
 /* Mobile (very small screens: max-width 400px) */
 @media (max-width: 413px) {
 
@@ -143,12 +220,15 @@
         font-size: 3rem;
         /* padding: 1rem; */
     }
-    .slogan p{
+
+    .slogan p {
         font-size: 1rem;
     }
-    #Services h1{
+
+    #Services h1 {
         padding-top: 2rem;
     }
+
     #Services h1,
     #About h1 {
         font-size: 2.5rem;
@@ -199,18 +279,24 @@
         margin: 0.5rem 0;
         text-align: center;
     }
-    #btn{
+
+    #btn {
         font-size: 0.7rem;
     }
-    .leftfooter{
+
+    .leftfooter {
         margin-left: 0.4rem;
     }
-    .leftfooter ul li img{
+
+    .leftfooter ul li img {
         width: 25px;
     }
-    .leftfooter ul li , .rightfooter ul li{
+
+    .leftfooter ul li,
+    .rightfooter ul li {
         padding: 3px auto;
     }
+
     .rightfooter ul li a span {
         font-size: 2rem;
         margin-left: 1rem;
@@ -335,7 +421,7 @@
         /* letter-spacing: 0.005em; */
 
 
-  /*  .slogan2 p {
+/*  .slogan2 p {
         font-size: 3rem;
     }
 }
@@ -439,7 +525,7 @@
 
     .container h2 {
         /* line-height: 1.6; */
-  /*      font-size: 2rem;
+/*      font-size: 2rem;
     }
 }
 
@@ -447,7 +533,7 @@
     /* .leftfooter ul {
         margin-left: 2rem;
     } */
- /*   .rightContainer{
+/*   .rightContainer{
         max-width: 202px;
         padding: 1rem;
     }

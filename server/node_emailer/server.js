@@ -6,7 +6,11 @@ const cors = require('cors');
 
 const app = express();
 app.use(bodyParser.json());
-app.use(cors());
+app.use(cors({
+  origin: '*',
+  methods: ['GET', 'POST'],
+  allowedHeaders: ['Content-Type'],
+}));
 app.use(bodyParser.urlencoded({ extended: false }));
 const route = express.Router();
 // create reusable transporter object using the default SMTP transport

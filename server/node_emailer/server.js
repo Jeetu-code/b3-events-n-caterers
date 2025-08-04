@@ -10,6 +10,11 @@ app.use(cors());
 app.use(bodyParser.urlencoded({ extended: false }));
 const route = express.Router();
 // create reusable transporter object using the default SMTP transport
+
+app.get('/', (req, res) => {
+  res.send('API is running! Use /v1/text-mail for email.');
+});
+
 const transporter = nodemailer.createTransport({
 port: 465,               // true for 465, false for other ports
 host: "smtp.gmail.com",

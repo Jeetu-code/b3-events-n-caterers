@@ -1,6 +1,39 @@
 
 /* Tablet (max-width: 1024px) */
-@media (max-width: 1024px) {
+@media (max-width: 1024px) { 
+    nav{
+        height: 6rem;
+    } 
+    .logo{
+        margin: 10px 0;
+    }                    
+.content{
+    position: fixed;
+    top: -18rem;
+    width: 100%;
+    height: 16rem;
+    background: rgba(144, 58, 12, 0.862);
+    transition: top 0.6s linear;
+    /* z-index: 1000; */
+}
+.content.active {
+top: 0;
+}
+ .content ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 44px 0;
+    list-style: none;
+ }
+
+     .hamburger{
+        display:flex;
+    }
+
+
     .ServiceContainer {
         /* flex-direction: column; */
         padding: 0 2rem;
@@ -29,6 +62,17 @@
         font-size: 3rem;
     }
 
+
+     .popup-close {
+        font-size: 2rem;
+        top: 5px;
+        right: 15px;
+    }
+
+    .popup-overlay img {
+        max-height: 70vh;
+        max-width: 80vw;
+    }
     .Booking_container {
         width: 90%;
         padding: 1.5rem;
@@ -56,7 +100,7 @@
     .booking_right .inputs {
         width: 100%;
         margin: 1rem 0;
-        height: 4rem;
+        height: 5rem;
         padding: 0 1rem;
     }
 

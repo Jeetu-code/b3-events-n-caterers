@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="static/media_quary.css">
     <link rel="icon" href="static/img/logo.png" type="image/png">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
-   
+
 
 
 </head>
@@ -28,6 +28,11 @@
                     <!-- <li><a href="#Testimonials">Testimonials</a></li> -->
 
                 </ul>
+            </div>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
             </div>
         </nav>
     </header>
@@ -48,8 +53,10 @@
 
                 <div class="ServiceContainer">
                     <div class="leftContainer">
-                        <img src="static/img/DJ.jpeg" alt="">
+                        <img src="static/img/DJ.jpeg" alt="" class="thumbnail">
+
                     </div>
+
                     <div class="rightContainer">
                         <p>हमारी उच्च गुणवत्ता वाली साउंड सिस्टम सेवाओं के साथ सही माहौल बनाएँ।<br> चाहे वह भावपूर्ण
                             शादी की
@@ -67,12 +74,13 @@
                             गुणवत्ता के प्रति हमारी प्रतिबद्धता का प्रतिबिंब है।</p>
                     </div>
                     <div class="leftContainer">
-                        <img src="static/img/image2.png" alt="">
+                        <img src="static/img/image2.png" alt="" class="thumbnail">
+
                     </div>
                 </div>
                 <div class="ServiceContainer">
                     <div class="leftContainer">
-                        <img src="static/img/image3.png" alt="">
+                        <img src="static/img/image3.png" alt="" class="thumbnail">
                     </div>
                     <div class="rightContainer">
                         <p>हम सभी प्रकार के आयोजनों के लिए मजबूत, स्टाइलिश और विशाल टेंट सेटअप प्रदान करते हैं। <br>
@@ -93,7 +101,7 @@
                         </p>
                     </div>
                     <div class="leftContainer">
-                        <img src="static/img/wedding .jpeg" alt="">
+                        <img src="static/img/wedding .jpeg" alt="" class="thumbnail">
                     </div>
                 </div>
                 <div class="slogan2">
@@ -105,59 +113,59 @@
             <h1>BOOK YOUR EVENT</h1>
             <div class="Booking_container">
                 <div class="container_item">
-                <div class="booking_left">
-                    <div class="inputs">
-                        <img src="static/calander.png" alt="">
-                        <input type="text" placeholder="Select Date" id="date" name="date">
+                    <div class="booking_left">
+                        <div class="inputs">
+                            <img src="static/img/calander.png" alt="">
+                            <input type="text" placeholder="Select Date" id="date" name="date">
+                        </div>
+                        <div class="inputs">
+                            <img src="static/img/dining.png" alt="">
+                            <select id="DishesMenu" name="DishesMenu">
+                                <option value="">Dishes and sweets menu</option>
+                                <option value="option1_value">Option 1 Display Text</option>
+                                <option value="option2_value">Option 2 Display Text</option>
+                                <option value="option3_value">Option 3 Display Text</option>
+                            </select>
+                        </div>
+                        <div class="inputs">
+                            <img src="static/img/people.jpeg" alt="">
+                            <select id="PeopleCount" name="PeopleCount">
+                                <option value="">Estimated no.of people</option>
+                                <option value="option1_value">Option 1 Display Text</option>
+                                <option value="option2_value">Option 2 Display Text</option>
+                                <option value="option3_value">Option 3 Display Text</option>
+                            </select>
+                        </div>
                     </div>
-                    <div class="inputs">
-                        <img src="static/dining.png" alt="">
-                        <select id="DishesMenu" name="DishesMenu" >
-                            <option value="">Dishes and sweets menu</option>
-                            <option value="option1_value">Option 1 Display Text</option>
-                            <option value="option2_value">Option 2 Display Text</option>
-                            <option value="option3_value">Option 3 Display Text</option>
-                        </select>
+                    <div class="booking_right">
+                        <div class="inputs">
+                            <img src="static/img/location.png" alt="">
+                            <select id="LocationMenu" name="LocationMenu">
+                                <option value="">Enter Function Location</option>
+                                <option value="option1_value">Option 1 Display Text</option>
+                                <option value="option2_value">Option 2 Display Text</option>
+                                <option value="option3_value">Option 3 Display Text</option>
+                            </select>
+                        </div>
+                        <div class="inputs">
+                            <img src="static/img/decoration2.png" alt="">
+                            <select id="DecorationMenu" name="DecorationMenu">
+                                <option value="">Decoration Menu</option>
+                                <option value="option1_value">Option 1 Display Text</option>
+                                <option value="option2_value">Option 2 Display Text</option>
+                                <option value="option3_value">Option 3 Display Text</option>
+                            </select>
+                        </div>
+                        <div class="inputs">
+                            <img src="static/img/party.png" alt="">
+                            <select id="EventMenu" name="EventMenu">
+                                <option value="">Enter Function Name</option>
+                                <option value="option1_value">Option 1 Display Text</option>
+                                <option value="option2_value">Option 2 Display Text</option>
+                                <option value="option3_value">Option 3 Display Text</option>
+                            </select>
+                        </div>
                     </div>
-                    <div class="inputs">
-                        <img src="static/people.jpeg" alt="">
-                        <select id="PeopleCount" name="PeopleCount">
-                            <option value="">Estimated no.of people</option>
-                            <option value="option1_value">Option 1 Display Text</option>
-                            <option value="option2_value">Option 2 Display Text</option>
-                            <option value="option3_value">Option 3 Display Text</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="booking_right">
-                    <div class="inputs">
-                        <img src="static/location.png" alt="">
-                        <select id="LocationMenu" name="LocationMenu">
-                            <option value="">Enter Function Location</option>
-                            <option value="option1_value">Option 1 Display Text</option>
-                            <option value="option2_value">Option 2 Display Text</option>
-                            <option value="option3_value">Option 3 Display Text</option>
-                        </select>
-                    </div>
-                    <div class="inputs">
-                        <img src="static/decoration2.png" alt="">
-                        <select id="DecorationMenu" name="DecorationMenu">
-                            <option value="">Decoration Menu</option>
-                            <option value="option1_value">Option 1 Display Text</option>
-                            <option value="option2_value">Option 2 Display Text</option>
-                            <option value="option3_value">Option 3 Display Text</option>
-                        </select>
-                    </div>
-                    <div class="inputs">
-                        <img src="static/party.png" alt="">
-                        <select id="EventMenu" name="EventMenu">
-                            <option value="">Enter Function Name</option>
-                            <option value="option1_value">Option 1 Display Text</option>
-                            <option value="option2_value">Option 2 Display Text</option>
-                            <option value="option3_value">Option 3 Display Text</option>
-                        </select>
-                    </div>
-                </div>
                 </div>
                 <div class="submit">
                     <button>submit</button>
@@ -229,9 +237,15 @@
             <p>&copy; copyright 2025</p>
         </div>
     </footer>
-</main>
- <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script> 
-<script src="static/script.js"></script>
+    </main>
+    <!-- Single Fullscreen Popup -->
+<div class="popup-overlay" id="popupOverlay">
+    <span class="popup-close" id="popupClose">&times;</span>
+    <img src="" alt="Popup Image" id="popupImage">
+</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="static/script.js"></script>
 </body>
 
 </html>

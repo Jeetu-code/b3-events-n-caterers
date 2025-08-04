@@ -45,6 +45,43 @@ nav {
     text-decoration: none;
     color: white;
 }
+
+.hamburger {
+  width: 35px;
+  height: 30px;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  position: relative;
+  left: 57px;
+  z-index: 1001;
+  margin: 29px 0;
+  
+}
+
+.bar {
+  height: 4px;
+  width: 100%;
+  background-color: #fff; /* Change as needed */
+  border-radius: 2px;
+  transition: 0.4s ease;
+  
+}
+
+/* Active transformation */
+.hamburger.active .bar:nth-child(1) {
+  transform: rotate(45deg) translate(8px, 10px);
+}
+
+.hamburger.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(3) {
+  transform: rotate(-45deg) translate(8px, -10px);
+}
+
 main{
     min-height: calc(100vh-5rem-12vh);
 }
@@ -121,6 +158,41 @@ section {
     height: 100%;
     object-fit: cover;
     border-radius: 10rem;
+     cursor: pointer;
+  /* transition: transform 0.3s; */
+}
+
+
+/* Popup overlay styling */
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    flex-direction: column;
+}
+
+.popup-overlay img {
+    max-width: 90%;
+    max-height: 90%;
+    border: 5px solid white;
+    border-radius: 10px;
+}
+
+.popup-close {
+    color: white;
+    font-size: 3rem;
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    cursor: pointer;
+    font-weight: bold;
 }
 
 .rightContainer {
@@ -367,7 +439,7 @@ section {
     right: 1rem; 
     font-size: 3rem;
 }
-.close-btn:hover{
+.closebtn:hover{
     cursor:pointer;
 
 }

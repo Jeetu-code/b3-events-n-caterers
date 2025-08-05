@@ -30,7 +30,7 @@ app.get('/', (req, res) => {
 // ...existing code...
 
 const transporter = nodemailer.createTransport({
-jjport: 465,               // true for 465, false for other ports
+port: 465,               // true for 465, false for other ports
 host: "smtp.gmail.com",
    auth: {
         user: 'jk1871881@gmail.com',

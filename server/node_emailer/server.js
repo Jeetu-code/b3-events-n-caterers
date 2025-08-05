@@ -3,8 +3,8 @@ const bodyParser = require('body-parser');
 const nodemailer = require('nodemailer');
 const PDFDocument = require("pdfkit");
 const cors = require('cors');
-
-const app = express();
+const { job } = require("../../cron.js"); // Correct relative path
+job.start();const app = express();
 app.use(bodyParser.json());
 app.use(cors({
   origin: '*',
